@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SMG Glass Pool Series — คู่มือสระว่ายน้ำกระจกครบวงจร จากประสบการณ์หน้างานจริง 20 ปี โดย SMG Glass And Metal">
+<meta name="keywords" content="สระกระจก, glass pool, กระจก HS Laminated, SGP, SMG Glass">
+<title>SMG Glass Pool Series | Knowledge Hub</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Tabler Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+
+<style>
+/* ─── RESET & BASE ─── */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1e3a4f;
+  --navy-dark:#142838;
+  --navy-light:#2a4f6a;
+  --green:#5a9478;
+  --green-light:#7ab89a;
+  --green-pale:#e8f2ed;
+  --cream:#faf9f7;
+  --cream2:#f3f1ec;
+  --text:#1a1a1a;
+  --text-muted:#666;
+  --text-light:#999;
+  --border:#e0ddd8;
+  --white:#ffffff;
+  --shadow:0 2px 16px rgba(30,58,79,0.10);
+  --shadow-lg:0 8px 40px rgba(30,58,79,0.16);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Prompt',sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  font-size:16px;
+  line-height:1.6;
+  min-height:100vh;
+}
+
+/* ─── TOPBAR ─── */
+.topbar{
+  background:var(--navy);
+  padding:0 5%;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 12px rgba(0,0,0,0.2);
+}
+.topbar-logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+.logo-asterisk{
+  width:32px;height:32px;
+  flex-shrink:0;
+}
+.logo-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.2;
+}
+.logo-smg{
+  font-family:'Montserrat',sans-serif;
+  font-weight:800;
+  font-size:18px;
+  color:#fff;
+  letter-spacing:2px;
+}
+.logo-sub{
+  font-family:'Montserrat',sans-serif;
+  font-size:9px;
+  color:var(--green-light);
+  letter-spacing:1.5px;
+  font-weight:500;
+}
+.topbar-nav{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.topbar-link{
+  font-family:'Montserrat',sans-serif;
+  font-size:11px;
+  font-weight:600;
+  color:rgba(255,255,255,0.65);
+  text-decoration:none;
+  padding:6px 12px;
+  border-radius:5px;
+  letter-spacing:0.5px;
+  transition:all 0.2s;
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+.topbar-link:hover{color:#fff;background:rgba(255,255,255,0.08);}
+.topbar-link i{font-size:14px;}
+.topbar-cta{
+  font-family:'Montserrat',sans-serif;
+  font-size:11px;
+  font-weight:700;
+  color:var(--navy);
+  background:var(--green-light);
+  text-decoration:none;
+  padding:7px 16px;
+  border-radius:6px;
+  letter-spacing:0.5px;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  transition:all 0.2s;
+}
+.topbar-cta:hover{background:#fff;}
+
+/* ─── HERO ─── */
+.hero{
+  background:var(--navy);
+  padding:80px 5% 72px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  top:-40%;left:-10%;
+  width:60%;height:160%;
+  background:radial-gradient(ellipse,rgba(90,148,120,0.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  bottom:-30%;right:-5%;
+  width:50%;height:120%;
+  background:radial-gradient(ellipse,rgba(90,148,120,0.08) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:rgba(90,148,120,0.15);
+  border:1px solid rgba(90,148,120,0.3);
+  color:var(--green-light);
+  font-family:'Montserrat',sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:6px 16px;
+  border-radius:100px;
+  margin-bottom:28px;
+}
+.hero-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(32px,6vw,60px);
+  font-weight:800;
+  color:#fff;
+  line-height:1.1;
+  margin-bottom:8px;
+  letter-spacing:-1px;
+}
+.hero-title span{color:var(--green-light);}
+.hero-subtitle{
+  font-family:'Kanit',sans-serif;
+  font-size:clamp(16px,2.5vw,22px);
+  font-weight:300;
+  color:rgba(255,255,255,0.7);
+  margin-bottom:16px;
+  line-height:1.5;
+}
+.hero-desc{
+  font-family:'Prompt',sans-serif;
+  font-size:15px;
+  color:rgba(255,255,255,0.5);
+  max-width:520px;
+  margin:0 auto 40px;
+  line-height:1.7;
+}
+.hero-stats{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+.hero-stat{
+  text-align:center;
+}
+.hero-stat-num{
+  font-family:'Montserrat',sans-serif;
+  font-size:28px;
+  font-weight:800;
+  color:var(--green-light);
+  line-height:1;
+}
+.hero-stat-label{
+  font-size:12px;
+  color:rgba(255,255,255,0.5);
+  margin-top:4px;
+  font-family:'Prompt',sans-serif;
+}
+.hero-divider{
+  width:1px;height:40px;
+  background:rgba(255,255,255,0.15);
+}
+
+/* ─── SECTION ─── */
+.section{padding:72px 5%;}
+.section-label{
+  font-family:'Montserrat',sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:2.5px;
+  color:var(--green);
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.section-title{
+  font-family:'Kanit',sans-serif;
+  font-size:clamp(24px,4vw,36px);
+  font-weight:600;
+  color:var(--navy);
+  line-height:1.2;
+  margin-bottom:8px;
+}
+.section-desc{
+  font-size:15px;
+  color:var(--text-muted);
+  max-width:560px;
+  line-height:1.7;
+}
+
+/* ─── BOOKS GRID ─── */
+.books-section{background:var(--white);}
+.books-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:24px;
+  margin-top:48px;
+}
+.book-card{
+  background:var(--cream);
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  display:flex;
+  flex-direction:column;
+  transition:transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position:relative;
+}
+.book-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-lg);
+  border-color:var(--green);
+}
+.book-card-header{
+  background:var(--navy);
+  padding:28px 28px 24px;
+  position:relative;
+  overflow:hidden;
+}
+.book-card-header::after{
+  content:'';
+  position:absolute;
+  bottom:-20px;right:-20px;
+  width:100px;height:100px;
+  border-radius:50%;
+  background:rgba(90,148,120,0.12);
+}
+.book-num{
+  font-family:'Montserrat',sans-serif;
+  font-size:48px;
+  font-weight:800;
+  color:rgba(255,255,255,0.12);
+  line-height:1;
+  position:absolute;
+  top:16px;right:20px;
+  letter-spacing:-2px;
+}
+.book-badge{
+  display:inline-block;
+  font-family:'Montserrat',sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:1.5px;
+  padding:4px 12px;
+  border-radius:100px;
+  margin-bottom:14px;
+}
+.book-title-en{
+  font-family:'Montserrat',sans-serif;
+  font-size:20px;
+  font-weight:800;
+  color:#fff;
+  line-height:1.2;
+  margin-bottom:4px;
+}
+.book-title-th{
+  font-family:'Kanit',sans-serif;
+  font-size:14px;
+  font-weight:300;
+  color:rgba(255,255,255,0.6);
+}
+.book-card-body{
+  padding:24px 28px 28px;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+.book-desc{
+  font-size:14px;
+  color:var(--text-muted);
+  line-height:1.7;
+  margin-bottom:20px;
+  flex:1;
+}
+.book-chapters{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:24px;
+}
+.book-chapter-item{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  color:var(--text-muted);
+}
+.book-chapter-item i{
+  font-size:13px;
+  color:var(--green);
+  flex-shrink:0;
+}
+.book-chapter-more{
+  font-size:11px;
+  color:var(--text-light);
+  padding-left:21px;
+  font-style:italic;
+}
+.book-cta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 16px;
+  background:var(--navy);
+  border-radius:8px;
+  font-family:'Montserrat',sans-serif;
+  font-size:12px;
+  font-weight:700;
+  color:#fff;
+  letter-spacing:0.5px;
+  transition:background 0.2s;
+}
+.book-card:hover .book-cta{background:var(--green);}
+.book-cta i{font-size:16px;}
+
+/* Book color variants */
+.b101 .book-badge{background:rgba(90,148,120,0.2);color:var(--green-light);}
+.b102 .book-badge{background:rgba(59,130,246,0.2);color:#93c5fd;}
+.b103 .book-badge{background:rgba(251,191,36,0.2);color:#fcd34d;}
+.b104 .book-badge{background:rgba(239,68,68,0.2);color:#fca5a5;}
+.b105 .book-badge{background:rgba(167,139,250,0.2);color:#c4b5fd;}
+
+/* ─── AUDIENCE SECTION ─── */
+.audience-section{background:var(--cream2);}
+.audience-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:20px;
+  margin-top:48px;
+}
+.audience-card{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:24px 20px;
+  text-align:center;
+  transition:box-shadow 0.2s,border-color 0.2s;
+}
+.audience-card:hover{box-shadow:var(--shadow);border-color:var(--green);}
+.audience-icon{
+  width:52px;height:52px;
+  border-radius:12px;
+  background:var(--green-pale);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 14px;
+}
+.audience-icon i{font-size:24px;color:var(--green);}
+.audience-title{
+  font-family:'Kanit',sans-serif;
+  font-size:16px;
+  font-weight:600;
+  color:var(--navy);
+  margin-bottom:6px;
+}
+.audience-desc{
+  font-size:13px;
+  color:var(--text-muted);
+  line-height:1.6;
+}
+
+/* ─── ABOUT SECTION ─── */
+.about-section{
+  background:var(--navy);
+  padding:72px 5%;
+}
+.about-inner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  max-width:1100px;
+  margin:0 auto;
+}
+.about-label{
+  font-family:'Montserrat',sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:2.5px;
+  color:var(--green-light);
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.about-title{
+  font-family:'Kanit',sans-serif;
+  font-size:clamp(22px,3.5vw,32px);
+  font-weight:600;
+  color:#fff;
+  line-height:1.3;
+  margin-bottom:16px;
+}
+.about-text{
+  font-size:15px;
+  color:rgba(255,255,255,0.65);
+  line-height:1.8;
+  margin-bottom:20px;
+}
+.about-quote{
+  border-left:3px solid var(--green);
+  padding:14px 20px;
+  background:rgba(90,148,120,0.08);
+  border-radius:0 8px 8px 0;
+  font-style:italic;
+  font-size:15px;
+  color:rgba(255,255,255,0.8);
+  line-height:1.7;
+  margin-bottom:28px;
+}
+.about-quote cite{
+  display:block;
+  margin-top:8px;
+  font-style:normal;
+  font-family:'Montserrat',sans-serif;
+  font-size:10px;
+  color:var(--green-light);
+  font-weight:700;
+  letter-spacing:0.5px;
+}
+.about-links{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.about-link{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:9px 18px;
+  border-radius:7px;
+  font-family:'Montserrat',sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.5px;
+  text-decoration:none;
+  transition:all 0.2s;
+}
+.about-link.primary{background:var(--green);color:#fff;}
+.about-link.primary:hover{background:var(--green-light);}
+.about-link.outline{border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.7);}
+.about-link.outline:hover{border-color:rgba(255,255,255,0.5);color:#fff;}
+.about-contact{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:12px;
+  padding:28px;
+}
+.about-contact-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:11px;
+  font-weight:700;
+  color:var(--green-light);
+  letter-spacing:1.5px;
+  margin-bottom:20px;
+}
+.contact-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  text-decoration:none;
+}
+.contact-item:last-child{border-bottom:none;}
+.contact-icon{
+  width:36px;height:36px;
+  border-radius:8px;
+  background:rgba(90,148,120,0.15);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+.contact-icon i{font-size:18px;color:var(--green-light);}
+.contact-label{
+  font-size:10px;
+  color:rgba(255,255,255,0.4);
+  font-family:'Montserrat',sans-serif;
+  letter-spacing:0.5px;
+  margin-bottom:2px;
+}
+.contact-value{
+  font-size:14px;
+  color:rgba(255,255,255,0.85);
+  font-weight:500;
+}
+
+/* ─── FOOTER ─── */
+.footer{
+  background:var(--navy-dark);
+  padding:32px 5%;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+.footer-logo{
+  font-family:'Montserrat',sans-serif;
+  font-size:14px;
+  font-weight:800;
+  color:#fff;
+  letter-spacing:2px;
+  margin-bottom:6px;
+}
+.footer-tag{
+  font-size:11px;
+  color:var(--green-light);
+  font-family:'Montserrat',sans-serif;
+  letter-spacing:1.5px;
+  margin-bottom:16px;
+}
+.footer-links{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+}
+.footer-link{
+  font-size:12px;
+  color:rgba(255,255,255,0.4);
+  text-decoration:none;
+  font-family:'Prompt',sans-serif;
+  transition:color 0.2s;
+}
+.footer-link:hover{color:rgba(255,255,255,0.7);}
+.footer-copy{
+  font-size:11px;
+  color:rgba(255,255,255,0.25);
+  font-family:'Prompt',sans-serif;
+}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:768px){
+  .topbar-nav .topbar-link span{display:none;}
+  .about-inner{grid-template-columns:1fr;gap:40px;}
+  .hero-divider{display:none;}
+  .hero-stats{gap:28px;}
+  .books-grid{grid-template-columns:1fr;}
+}
+@media(max-width:480px){
+  .topbar-nav .topbar-link{padding:6px 8px;}
+  .topbar-cta span{display:none;}
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(24px);}
+  to{opacity:1;transform:translateY(0);}
+}
+.hero-badge{animation:fadeUp 0.5s ease both;}
+.hero-title{animation:fadeUp 0.6s 0.1s ease both;}
+.hero-subtitle{animation:fadeUp 0.6s 0.2s ease both;}
+.hero-desc{animation:fadeUp 0.6s 0.3s ease both;}
+.hero-stats{animation:fadeUp 0.6s 0.4s ease both;}
+</style>
+</head>
+<body>
+
+<!-- ─── TOPBAR ─── -->
+<header class="topbar">
+  <a href="index.html" class="topbar-logo">
+    <img
+      src="data:image/png;base64,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"
+      alt="SMG Glass And Metal — Only The Significant"
+      style="height:40px;width:auto;object-fit:contain;"
+    >
+    <span class="logo-sub" style="margin-left:6px;align-self:flex-end;padding-bottom:3px;">GLASS POOL SERIES</span>
+  </a>
+  <nav class="topbar-nav">
+    <a href="https://smg-con.co.th/news.php" target="_blank" class="topbar-link">
+      <i class="ti ti-news"></i><span>NEWS</span>
+    </a>
+    <a href="https://smg-con.co.th/esg_center.php" target="_blank" class="topbar-link">
+      <i class="ti ti-leaf"></i><span>ESG</span>
+    </a>
+    <a href="https://smg-con.co.th/contact.php" target="_blank" class="topbar-cta">
+      <i class="ti ti-phone"></i><span>ติดต่อ SMG</span>
+    </a>
+  </nav>
+</header>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-badge">
+    <i class="ti ti-book-2" style="font-size:12px;"></i>
+    KNOWLEDGE HUB — GLASS POOL SERIES
+  </div>
+  <h1 class="hero-title">SMG <span>GLASS POOL</span><br>SERIES 101–105</h1>
+  <p class="hero-subtitle">คู่มือสระว่ายน้ำกระจกที่ครบที่สุดในประเทศไทย</p>
+  <p class="hero-desc">จากประสบการณ์หน้างานจริง 20 ปี รวม 24 บท ครอบคลุมตั้งแต่การวางแผน วิศวกรรม การติดตั้ง ไปจนถึงการดูแลรักษาและการจัดการโครงการ</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">5</div>
+      <div class="hero-stat-label">เล่ม</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">24</div>
+      <div class="hero-stat-label">บท</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">20</div>
+      <div class="hero-stat-label">ปีประสบการณ์</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">ฟรี</div>
+      <div class="hero-stat-label">อ่านได้เลย</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BOOKS SECTION ─── -->
+<section class="section books-section">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div class="section-label">THE SERIES</div>
+    <h2 class="section-title">เลือกเล่มที่ต้องการ</h2>
+    <p class="section-desc">แต่ละเล่มออกแบบมาสำหรับกลุ่มผู้อ่านเฉพาะ สามารถเริ่มจากเล่มไหนก็ได้ตามความต้องการ</p>
+
+    <div class="books-grid">
+
+      <!-- 101 -->
+      <a href="book-101.html" class="book-card b101">
+        <div class="book-card-header">
+          <div class="book-num">101</div>
+          <div class="book-badge">PART 0–2 · 7 บท</div>
+          <div class="book-title-en">GLASS POOL 101</div>
+          <div class="book-title-th">ฝันให้ถูกต้อง + วางแผนก่อนสร้าง</div>
+        </div>
+        <div class="book-card-body">
+          <p class="book-desc">เล่มเริ่มต้นสำหรับเจ้าของบ้านทุกคน ตั้งแต่ทำความเข้าใจว่าทำไมต้องกระจก ไม่ใช่อะคริลิก ไปจนถึงงบประมาณจริงและ 10 คำถามที่ต้องถามก่อนตัดสินใจ</p>
+          <div class="book-chapters">
+            <div class="book-chapter-item"><i class="ti ti-check"></i>ทำไมต้องกระจก? vs อะคริลิก</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>5 ระดับสระกระจก + งบประมาณจริง</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>ฮวงจุ้ยและตำแหน่งที่ถูกต้อง</div>
+            <div class="book-chapter-more">+ อีก 4 บท รวม Appendix & References</div>
+          </div>
+          <div class="book-cta">
+            <span>เริ่มอ่านเล่มนี้</span>
+            <i class="ti ti-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- 102 -->
+      <a href="book-102.html" class="book-card b102">
+        <div class="book-card-header">
+          <div class="book-num">102</div>
+          <div class="book-badge">PART 3 · 4 บท</div>
+          <div class="book-title-en">GLASS POOL 102</div>
+          <div class="book-title-th">วิศวกรรมที่ต้องรู้</div>
+        </div>
+        <div class="book-card-body">
+          <p class="book-desc">สำหรับวิศวกร สถาปนิก และช่างผู้รับเหมา ว่าด้วยแรงดันน้ำ ระบบน้ำสระ โครงสร้างคอนกรีต และระบบกันซึม Layer by Layer ที่ต้องรู้ก่อนออกแบบ</p>
+          <div class="book-chapters">
+            <div class="book-chapter-item"><i class="ti ti-check"></i>น้ำหนักน้ำและแรงดัน — P=ρgh</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>ระบบน้ำสระ คลอรีน vs น้ำเกลือ</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>คอนกรีต f'c ≥ 300 ksc + Crystalline</div>
+            <div class="book-chapter-more">+ ระบบกันซึม 7 Layer</div>
+          </div>
+          <div class="book-cta">
+            <span>เริ่มอ่านเล่มนี้</span>
+            <i class="ti ti-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- 103 -->
+      <a href="book-103.html" class="book-card b103">
+        <div class="book-card-header">
+          <div class="book-num">103</div>
+          <div class="book-badge">PART 4 · 4 บท</div>
+          <div class="book-title-en">GLASS POOL 103</div>
+          <div class="book-title-th">กระจกและการติดตั้ง</div>
+        </div>
+        <div class="book-card-body">
+          <p class="book-desc">คู่มือปฏิบัติสำหรับช่างและผู้รับเหมา ว่าด้วยการเลือกกระจกให้ถูกชนิด ออกแบบร่องบ่า ระบบ Sealant SS U-Channel และ Master Checklist 5 Stage</p>
+          <div class="book-chapters">
+            <div class="book-chapter-item"><i class="ti ti-check"></i>HS Laminated + SGP vs PVB</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>Backing Rod + Pool-Grade Sealant</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>SS U-Channel — เกรดและการติดตั้ง</div>
+            <div class="book-chapter-more">+ Master Checklist 5 Stage สมบูรณ์</div>
+          </div>
+          <div class="book-cta">
+            <span>เริ่มอ่านเล่มนี้</span>
+            <i class="ti ti-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- 104 -->
+      <a href="book-104.html" class="book-card b104">
+        <div class="book-card-header">
+          <div class="book-num">104</div>
+          <div class="book-badge">PART 5–6 · 6 บท</div>
+          <div class="book-title-en">GLASS POOL 104</div>
+          <div class="book-title-th">ดูแลรักษา + เมื่อเกิดปัญหา</div>
+        </div>
+        <div class="book-card-body">
+          <p class="book-desc">เล่มที่เจ้าของบ้านต้องการมากที่สุดหลังส่งมอบงาน ครอบคลุมการดูแลน้ำสระ DIY ที่ทำได้เอง การวินิจฉัยปัญหา และวิธีคุยกับช่างไม่ให้โดนหลอก</p>
+          <div class="book-chapters">
+            <div class="book-chapter-item"><i class="ti ti-check"></i>ค่าน้ำสระ 4 ตัวที่ต้องควบคุม</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>Bucket Test แยกรั่วจริง vs ระเหย</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>5 คำถามกรองช่างที่รู้จริง</div>
+            <div class="book-chapter-more">+ ตาราง DIY Green/Yellow/Red</div>
+          </div>
+          <div class="book-cta">
+            <span>เริ่มอ่านเล่มนี้</span>
+            <i class="ti ti-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- 105 -->
+      <a href="book-105.html" class="book-card b105">
+        <div class="book-card-header">
+          <div class="book-num">105</div>
+          <div class="book-badge">PART 7 · 3 บท</div>
+          <div class="book-title-en">GLASS POOL 105</div>
+          <div class="book-title-th">สำหรับโครงการ + ภาคผนวก</div>
+        </div>
+        <div class="book-card-body">
+          <p class="book-desc">สำหรับ Developer ฝ่ายจัดซื้อ และผู้รับเหมาโครงการ ครอบคลุม Spec และแบบก่อสร้างที่ถูกต้อง Supplier Management Warranty 3 ฝ่าย และ Documentation ก่อนส่งมอบ</p>
+          <div class="book-chapters">
+            <div class="book-chapter-item"><i class="ti ti-check"></i>Spec กระจก 6 อย่างที่ต้องระบุในแบบ</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>Payment Milestone + Maintenance Contract</div>
+            <div class="book-chapter-item"><i class="ti ti-check"></i>Warranty 3 ฝ่าย — ใครรับผิดชอบอะไร</div>
+            <div class="book-chapter-more">+ Documentation 7 รายการก่อนส่งมอบ</div>
+          </div>
+          <div class="book-cta">
+            <span>เริ่มอ่านเล่มนี้</span>
+            <i class="ti ti-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── AUDIENCE SECTION ─── -->
+<section class="section audience-section">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div class="section-label">เหมาะสำหรับ</div>
+    <h2 class="section-title">ซีรีส์นี้เหมาะกับใคร?</h2>
+    <p class="section-desc">ออกแบบให้ครอบคลุมทุกกลุ่มที่เกี่ยวข้องกับสระกระจก</p>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <div class="audience-icon"><i class="ti ti-home"></i></div>
+        <div class="audience-title">เจ้าของบ้าน</div>
+        <div class="audience-desc">เริ่มจากเล่ม 101 และ 104 เข้าใจก่อนตัดสินใจ ดูแลหลังส่งมอบได้เอง</div>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon"><i class="ti ti-ruler-2"></i></div>
+        <div class="audience-title">สถาปนิก</div>
+        <div class="audience-desc">เล่ม 102–103 ครอบคลุม Spec ที่ถูกต้อง Deflection Limit และ Drawing 5 ประเภท</div>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon"><i class="ti ti-tools"></i></div>
+        <div class="audience-title">ช่าง/ผู้รับเหมา</div>
+        <div class="audience-desc">เล่ม 103 คือ Master Checklist สำหรับหน้างาน ทุก Stage มี Checkpoint ชัดเจน</div>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon"><i class="ti ti-building"></i></div>
+        <div class="audience-title">Developer/โครงการ</div>
+        <div class="audience-desc">เล่ม 105 ครอบคลุม Contract Warranty และ Documentation ก่อนส่งมอบโครงการ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT SECTION ─── -->
+<section class="about-section">
+  <div class="about-inner">
+    <div>
+      <div class="about-label">ABOUT THE AUTHOR</div>
+      <h2 class="about-title">จากประสบการณ์<br>หน้างานจริง 20 ปี</h2>
+      <p class="about-text">ยอดธง สิงหเดชวีระชัย Managing Director ของ SMG Glass And Metal รวบรวมความรู้จากโครงการจริงกว่าร้อยโครงการ เขียนเป็นซีรีส์ที่ช่วยให้ทุกฝ่ายตัดสินใจได้ถูกต้องตั้งแต่ต้น</p>
+      <div class="about-quote">
+        "โชคดีที่ได้อ่านก่อน ดีกว่ารู้หลังจากเสียเงินไปแล้ว"
+        <cite>ยอดธง สิงหเดชวีระชัย — Managing Director, SMG Glass And Metal</cite>
+      </div>
+      <div class="about-links">
+        <a href="https://smg-con.co.th" target="_blank" class="about-link primary">
+          <i class="ti ti-world"></i> เว็บไซต์ SMG
+        </a>
+        <a href="https://smg-con.co.th/project.php" target="_blank" class="about-link outline">
+          <i class="ti ti-photo"></i> ดูผลงาน
+        </a>
+        <a href="https://smg-con.co.th/esg_center.php" target="_blank" class="about-link outline">
+          <i class="ti ti-leaf"></i> ESG Center
+        </a>
+      </div>
+    </div>
+
+    <div class="about-contact">
+      <div class="about-contact-title">CONTACT SMG</div>
+      <a class="contact-item" href="tel:0863174966">
+        <div class="contact-icon"><i class="ti ti-phone"></i></div>
+        <div>
+          <div class="contact-label">โทรศัพท์</div>
+          <div class="contact-value">086-317-4966</div>
+        </div>
+      </a>
+      <a class="contact-item" href="tel:0946639951">
+        <div class="contact-icon"><i class="ti ti-device-mobile"></i></div>
+        <div>
+          <div class="contact-label">มือถือ</div>
+          <div class="contact-value">094-663-9951</div>
+        </div>
+      </a>
+      <a class="contact-item" href="mailto:smg58.glass@gmail.com">
+        <div class="contact-icon"><i class="ti ti-mail"></i></div>
+        <div>
+          <div class="contact-label">อีเมล</div>
+          <div class="contact-value">smg58.glass@gmail.com</div>
+        </div>
+      </a>
+      <a class="contact-item" href="https://smg-con.co.th" target="_blank">
+        <div class="contact-icon"><i class="ti ti-world"></i></div>
+        <div>
+          <div class="contact-label">เว็บไซต์</div>
+          <div class="contact-value">smg-con.co.th</div>
+        </div>
+      </a>
+      <a class="contact-item" href="https://line.me/ti/p/~@smg58" target="_blank">
+        <div class="contact-icon"><i class="ti ti-brand-line"></i></div>
+        <div>
+          <div class="contact-label">LINE OA</div>
+          <div class="contact-value">@smg58</div>
+        </div>
+      </a>
+      <a class="contact-item" href="https://smg-con.co.th/contact.php" target="_blank" style="margin-top:8px;">
+        <div class="contact-icon" style="background:rgba(90,148,120,0.3);">
+          <i class="ti ti-map-pin"></i>
+        </div>
+        <div>
+          <div class="contact-label">ที่อยู่</div>
+          <div class="contact-value" style="font-size:12px;line-height:1.5;">24/22 ซ.กำนันแม้น 13 แยก 18<br>บางบอน กรุงเทพฯ 10150</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div class="footer-logo">SMG</div>
+  <div class="footer-tag">ONLY THE SIGNIFICANT</div>
+  <div class="footer-links">
+    <a href="https://smg-con.co.th" target="_blank" class="footer-link">หน้าหลัก SMG</a>
+    <a href="https://smg-con.co.th/product.php" target="_blank" class="footer-link">สินค้า</a>
+    <a href="https://smg-con.co.th/service.php" target="_blank" class="footer-link">บริการ</a>
+    <a href="https://smg-con.co.th/project.php" target="_blank" class="footer-link">ผลงาน</a>
+    <a href="https://smg-con.co.th/news.php" target="_blank" class="footer-link">News</a>
+    <a href="https://smg-con.co.th/esg_center.php" target="_blank" class="footer-link">ESG</a>
+    <a href="https://smg-con.co.th/contact.php" target="_blank" class="footer-link">ติดต่อ</a>
+  </div>
+  <div class="footer-copy">© 2026 SMG Glass And Metal Co., Ltd. | Tax ID: 010 555 80666 94 | Glass Pool Series — Knowledge Hub</div>
+</footer>
+
+</body>
+</html>
